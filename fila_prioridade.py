@@ -90,3 +90,5 @@ class FilaPrioridade:
     def size(self) -> int:
 
         return 0 if self.is_empty() else self.__qtdItens
+    
+    #teste
