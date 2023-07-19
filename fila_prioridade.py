@@ -29,8 +29,7 @@ class FilaPrioridade:
     # Retorna uma referência para o primeiro item da fila de prioridade
     # Caso a lista esteja vazia, retorna None
     def first(self) -> No:
-        # implementação do método
-        pass
+        return self.__inicio
 
 
     # insere um item na fila de prioridade e retorna True, se o item for inserido
