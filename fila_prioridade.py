@@ -59,8 +59,13 @@ class FilaPrioridade:
     # remove o primeiro item da fila de prioridade, caso não esteja vazia, e retorna o Nó
     # se a fila de prioridade estiver vazia, lança uma exceção: raise Exception("mensagem de erro")
     def remove(self) -> No:
-        # implementação do método
-        pass
+        if self.is_empty():
+            raise Exception("A fila de prioridade está vazia!")
+
+        no_removido = self.__inicio
+        self.__inicio = self.__inicio.prox
+        self.__qtdItens -= 1
+        return no_removido
 
 
     # retorna uma lista de tuplas com os itens (valor e prioridade) da fila de prioridade 
